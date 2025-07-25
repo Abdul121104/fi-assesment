@@ -18,17 +18,17 @@
 1. Clone the repository:
    ```bash
    git clone https://github.com/Abdul121104/fi-assesment
-   cd <repo-folder>/backend
+   cd backend
    ```
 2. Install dependencies:
    ```bash
    npm install
    ```
 3. Configure MongoDB connection:
-   - Edit `models/db.js` and set your MongoDB URI in `mongoURI`.
+   - Edit `models/db.js` and set your MongoDB URI in `mongoURI`.(currently i have added my mongodb atlas uri so you can run the test one time as for running it again you need to delete the added product and user from DB)
 4. Start the backend server:
    ```bash
-   node server.js
+   npm start
    ```
    The server will run on `http://localhost:3000` by default.
 
