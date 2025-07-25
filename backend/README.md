@@ -28,7 +28,7 @@
    - Edit `models/db.js` and set your MongoDB URI in `mongoURI`.
 4. Start the backend server:
    ```bash
-   node server.js
+   npm start
    ```
    The server will run on `http://localhost:3000` by default.
 
