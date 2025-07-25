@@ -5,7 +5,7 @@ exports.addProduct = async (req, res) => {
     const product = new Product(req.body);
     await product.save();
     res.status(201).json({ 
-      product_id: product._id,  // Changed from 'id' to 'product_id'
+      product_id: product._id,
       message: 'Product added successfully' 
     });
   } catch (err) {
