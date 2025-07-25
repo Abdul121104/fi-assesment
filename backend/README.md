@@ -25,7 +25,7 @@
    npm install
    ```
 3. Configure MongoDB connection:
-   - Edit `models/db.js` and set your MongoDB URI in `mongoURI`.(currently i have added my mongodb atlas uri so you can run the test one type as for running it again you need to delete the aded product and user from DB)
+   - Edit `models/db.js` and set your MongoDB URI in `mongoURI`.(currently i have added my mongodb atlas uri so you can run the test one time as for running it again you need to delete the added product and user from DB)
 4. Start the backend server:
    ```bash
    npm start
