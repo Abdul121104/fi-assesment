@@ -60,3 +60,5 @@ No manual migration is needed; Mongoose will create collections as needed.
 
 ## Running Tests
 - See `test_api.py` for example API tests and usage. 
+<img width="660" height="225" alt="image" src="https://github.com/user-attachments/assets/c3901dc5-55a8-4b95-9648-a545c62ec5a2" />
+
