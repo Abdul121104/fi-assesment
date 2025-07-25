@@ -18,7 +18,7 @@
 1. Clone the repository:
    ```bash
    git clone https://github.com/Abdul121104/fi-assesment
-   cd <repo-folder>/backend
+   cd backend
    ```
 2. Install dependencies:
    ```bash
