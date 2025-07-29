@@ -38,7 +38,7 @@ This project leverages AI tools (e.g., ChatGPT,gemini,github co-pilot) in the fo
 
 ### Error Handling Strategy
 - Improving JWT-related error messaging.
-- Creating reusable error wrappers for async API handlers.
+- helped in creation of auth.js .
 
 ### API Documentation
 - Setup and refinement of **Swagger UI** for clean API documentation in the backend (`/api-docs`).
@@ -61,6 +61,34 @@ This project leverages AI tools (e.g., ChatGPT,gemini,github co-pilot) in the fo
 - `frontend/` – React + Vite frontend
 - `backend/` – Node.js + Express + MongoDB backend
 
->  Installation steps are provided in the respective `README.md` files inside each directory.
+
+
+
+---
+
+#  Fullstack App - Docker Setup
+
+This project can be containerized and run using Docker. Ensure Docker is installed on your system.
+
+###  Step 1: Build the Docker Image
+
+```bash
+docker build -t my-fullstack-dev .
+``` 
+```bash
+docker run -p 3000:3000 -p 5173:5173 my-fullstack-dev
+``` 
+### Step 2: Verify the Services
+Backend API: Open your browser and go to http://localhost:3000/api-docs to view the Swagger API documentation.
+
+Frontend App: Access the frontend via http://localhost:5173
+
+### Notes
+Ensure Docker is installed and running on your system.
+
+Ports 3000 and 5173 must be available and not in use by other services.
+
+The container assumes the backend runs on port 3000 and frontend on 5173 internally.
+
 
 
