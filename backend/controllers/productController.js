@@ -26,11 +26,10 @@ exports.updateQuantity = async (req, res) => {
     if (!product) {
       return res.status(404).json({ message: 'Product not found' });
     }
-    
+    // ye test.py mai paramenter manga hai isliye return kiya hai 
     res.json({ 
       message: 'Quantity updated',
-      quantity: product.quantity , // Added this to match test expectations
-      // Keeping product in response if other parts of your app need it
+      quantity: product.quantity ,
       product 
     });
   } catch (err) {
@@ -40,8 +39,8 @@ exports.updateQuantity = async (req, res) => {
 
 exports.getProducts = async (req, res) => {
   try {
-    const products = await Product.find(); // Remove pagination parameters
-    res.json(products); // Return direct array of products
+    const products = await Product.find();
+    res.json(products);
   } catch (err) {
     res.status(400).json({ message: 'Error fetching products', error: err.message });
   }
